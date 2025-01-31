@@ -1,0 +1,61 @@
+ CoCo Investment Website Documentation
+
+Overview
+The CoCo Investment Website is a professional platform designed to manage and showcase multiple services under the CoCo brand. It includes CoCo Transports, CoCo Farms, and CoCo Courier Services, each with its dedicated functionalities and user-friendly interface.
+
+ Features
+ 1. Landing Page
+- A visually appealing Back to School Landing Page.
+- Sections for CoCo Transports and CoCo Farms.
+- **Pagination for navigating between services.
+- **Responsive design** for desktop and mobile devices.
+
+2. Navigation System
+- A dropdown menu for mobile users.
+- Well-structured navigation bar.
+- Media queries for adaptability across different screen sizes.
+
+3.CoCo Transports
+- School Bus Pick and Drop Schedule Admin Page.
+- Features:
+  - Branding and sidebar navigation.
+  - Dashboard overview.
+  - Form handling for transport registration.
+  - Table filtering for bus schedules.
+  - Dark mode support.
+  - Additional functionalities:
+    - Attendance sectionfor tracking students.
+    - Payments and balances in MWK (Malawian Kwacha).
+    - Route selection instead of bus number.
+    - Trip type selection (Go and Back, Go only, Back only).
+    - Receipt picture viewing option.
+
+ 4.CoCo Courier Services
+- Service cards with a ‘Book’ button under each.
+- An easy-to-use booking form.
+
+ 5. CoCo Farms
+- Information and details about available farm produce.
+- Service selection page leading to farm produce details.
+
+ 6. User Interaction Enhancements
+- Pop-up functionality when applying for services:
+- Option to download a registration form (PDF) or upload a PDF.
+- javaScript enhancements** for improved user experience.
+
+ Technologies Used
+-Front-end: HTML, CSS, JavaScript
+-Back-end: PHP (if applicable for form handling and data storage)
+-Database: MySQL (if needed for bookings and payments)
+-Styling & UX: Media queries, animations, and JavaScript enhancements
+
+Future Enhancements
+- User authentication for service bookings.
+- Admin dashboard for managing transport schedules and courier orders.
+- Automated notifications for transport and courier updates.
+- E-commerce integration for CoCo Farms produce sales.
+
+ Conclusion
+The CoCo Investment Website is a dynamic and user-friendly platform designed to streamline transportation, courier, and farming services. With responsive design, seamless navigation, and future scalability, it provides a professional digital presence for CoCo Investment’s diverse services.
+
+

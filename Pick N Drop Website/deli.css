@@ -1,0 +1,398 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8fafc;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ff8c00;
+    border-bottom: 2px solid #ff8c00;
+}
+
+
+.new{
+    display: none;
+}
+.foot{
+    display: none;
+}
+/* Courier Intro Section */
+.courier-intro {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #ff8c00 0%, #ffe0b2 100%);
+    color: #fff;
+}
+.logo {
+    font-size: 26px;
+    font-weight: 600;
+    color: #ff8c00;
+    width: 40%;
+}
+.logo2{
+    width: 50%;
+}
+
+.courier-intro h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.courier-intro p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Courier Services */
+.courier-services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 10px;
+}
+
+.service-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.service-card h2 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+
+.service-card p {
+    padding: 0 20px 30px;
+    color: #666;
+    font-size: 16px;
+}
+
+/* Button Styling */
+.book-btn {
+    background-color: #ff8c00;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 30px auto;
+    display: block;
+    width: 150px;
+}
+
+.book-btn:hover {
+    background-color: #e67e00;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ff8c00;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ff8c00;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #ff8c00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}
+/* General Styles (same as before) */
+
+/* Dropdown Styling */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative; /* Allows dropdown positioning */
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover a,
+nav ul li a.active {
+    color: #ff8c00;
+    border-bottom: 2px solid #ff8c00;
+}
+
+/* Mobile view - max-width 480px */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+    .pcv{
+        display: none;
+    }
+    .footer-content2 {
+        
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .footer-section {
+        
+        margin: 0px;
+        padding: 10px;
+    }
+    .foot{
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 10px 0;
+        border-top: 1px solid #ddd;
+    }
+    .new{
+        display: block;
+    }
+    nav ul.hidden {
+        display: none; /* Keep it hidden by default */
+    }
+
+    nav ul.show {
+        display: flex; /* Show when the menu is toggled */
+    }
+    .search-btn{
+        display: none;
+    }
+
+    .dropbtn {
+        background-color: #ff8c00;
+        color: white;
+        padding: 10px 15px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        margin-left: 60%;
+       margin-top: -15%;
+    }
+
+    .dropbtn:hover {
+        background-color: #e67e00;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        width: 100%;
+       
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 10px 15px;
+        display: block;
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 22px;
+        width: 70%;
+    }
+    .logo2{
+        width: 80%;
+    }
+
+    main {
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .text-block h1 {
+        font-size: 36px;
+    }
+
+    .text-block p {
+        font-size: 16px;
+    }
+
+    .cta-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .illustration img {
+        width: 100%;
+        max-width: 390px;
+        border-top-left-radius: 80px;
+        border-top-right-radius: 80px;
+    }
+    .service-card {
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+        text-align: center;
+        width: 450px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+}
+
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none; /* Hidden by default on mobile */
+    }
+
+    nav ul.show {
+        display: block; /* Show menu when toggle is clicked */
+    }
+    #foot{
+        display: block;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+    }
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+  
+    .mobile-menu-toggle {
+        display: block; /* Show on mobile */
+    }
+
+    .dropdown-menu li {
+        padding: 10px;
+    }
+}

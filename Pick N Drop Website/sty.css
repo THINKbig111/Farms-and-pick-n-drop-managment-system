@@ -1,0 +1,360 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 600;
+    color: #ff8c00;
+    width: 40%;
+}
+.logo2{
+    width: 50%;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ff8c00;
+    border-bottom: 2px solid #ff8c00;
+}
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px ;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.illustration img {
+    width: 350px;
+    border-radius: 20px;
+}
+
+.text-block {
+    max-width: 500px;
+    margin-left: 50px;
+}
+
+.text-block h1 {
+    font-size: 52px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* .text-block h1 span {
+    color: #00c9ff;
+} */
+
+.text-block p {
+    margin: 20px 0;
+    color: #777;
+    font-size: 18px;
+}
+.co{
+    color: #ff8d01;
+}
+.co2{
+    color: #09e2fe;
+}
+.cta-btn {
+    background-color: #ff8c00;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e67e00;
+}
+.content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.content.active {
+    display: flex;
+    opacity: 1;
+}
+
+.pagination {
+    margin-top: 30px;
+}
+
+.pagination .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    background-color: #ccc;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.pagination .dot.active,
+.pagination .dot:hover {
+    background-color: #00c9ff;
+}
+
+/* Different styles for CoKo Farms Pagination if needed */
+.coko-farms .pagination .dot.active {
+    background-color: #00a65a;
+}
+
+.coko-cars .pagination .dot.active {
+    background-color: #fa9c06;
+}
+.coko-delivery .pagination .dot.active {
+    background-color: #62ff01;
+}
+.new{
+    display: none;
+}
+
+/* Responsive Design */
+
+/* Tablet view - max-width 768px */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    main {
+        flex-direction: column;
+
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-block {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .illustration img {
+        width: 100%;
+        max-width: 300px;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+/* Mobile view - max-width 480px */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 10px 0;
+        border-top: 1px solid #ddd;
+    }
+    .new{
+        display: block;
+    }
+    nav ul.hidden {
+        display: none; /* Keep it hidden by default */
+    }
+
+    nav ul.show {
+        display: flex; /* Show when the menu is toggled */
+    }
+    .search-btn{
+        display: none;
+    }
+
+    .dropbtn {
+        background-color: #ff8c00;
+        color: white;
+        padding: 10px 15px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        margin-left: 80%;
+       margin-top: -15%;
+    }
+
+    .dropbtn:hover {
+        background-color: #e67e00;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        width: 100%;
+
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 10px 15px;
+        display: block;
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 22px;
+        width: 70%;
+    }
+    .logo2{
+        width: 80%;
+    }
+
+    main {
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .text-block h1 {
+        font-size: 36px;
+    }
+
+    .text-block p {
+        font-size: 16px;
+    }
+
+    .cta-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .illustration img {
+        width: 100%;
+        max-width: 390px;
+        border-top-left-radius: 80px;
+        border-top-right-radius: 80px;
+    }
+}
+footer {
+    background-color: #333;
+    color: #fff;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ff8c00;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ff8c00;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #ff8c00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}

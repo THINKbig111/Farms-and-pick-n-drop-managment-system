@@ -1,0 +1,362 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    font-size: 26px;
+    font-weight: 600;
+    color: #ff8c00;
+    width: 40%;
+}
+.new{
+    display: none;
+}
+.foot{
+    display: none;
+}
+.logo2{
+    width: 50%;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+.new{
+    display: none;
+}
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ff8c00;
+    border-bottom: 2px solid #ff8c00;
+}
+
+.search-btn button {
+    background-color: #ff8c00;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn button:hover {
+    background-color: #e67e00;
+}
+
+/* Booking Page Styles */
+.booking-page {
+
+    margin: 50px 20px;
+    background: #ffffff;
+    padding: 40px 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.booking-page h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.booking-form select,
+.booking-form input {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.booking-form input[type="file"] {
+    padding: 0;
+}
+
+.booking-form .cta-btn {
+    background-color: #ff8c00;
+    color: #ffffff;
+    border: none;
+    padding: 15px 0;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.booking-form .cta-btn:hover {
+    background-color: #e67e00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none; /* Hidden by default on mobile */
+    }
+
+    nav ul.show {
+        display: block; /* Show menu when toggle is clicked */
+    }
+    #foot{
+        display: block;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+    }
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+  
+    .mobile-menu-toggle {
+        display: block; /* Show on mobile */
+    }
+
+    .dropdown-menu li {
+        padding: 10px;
+    }
+    .booking-page {
+        padding: 30px 20px;
+    }
+
+    .booking-page h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .booking-form label {
+        font-size: 16px;
+    }
+
+    .booking-form input, .booking-form select {
+        font-size: 14px;
+    }
+
+    .booking-form .cta-btn {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 10px 0;
+        border-top: 1px solid #ddd;
+       
+    }
+    .pcv{
+        display: none;
+    }
+    .footer-content2 {
+        
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .footer-section {
+        
+        margin: 0px;
+        padding: 10px;
+    }
+    .foot{
+        display: block;
+    }
+    .new{
+        
+
+        display: block;
+    }
+    nav ul.hidden {
+        display: none; /* Keep it hidden by default */
+    }
+
+    nav ul.show {
+        display: flex; /* Show when the menu is toggled */
+   
+    }
+    .search-btn{
+        display: none;
+    }
+
+    .dropbtn {
+        background-color: #ff8c00;
+        color: white;
+        padding: 10px 15px;
+        font-size: 25px;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        margin-left: 0%;
+       margin-top: -7%;
+    }
+
+    .dropbtn:hover {
+        background-color: #e67e00;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 10px 15px;
+        display: block;
+        width: 100%;
+    }
+
+    .logo {
+        position: relative;
+        font-size: 22px;
+        width: 70%;
+        height: auto;
+    }
+    .logo2{
+        width: 80%;
+    }
+
+    main {
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .text-block h1 {
+        font-size: 36px;
+    }
+
+    .text-block p {
+        font-size: 16px;
+    }
+
+    .cta-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+   
+
+}
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ff8c00;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ff8c00;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #ff8c00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}

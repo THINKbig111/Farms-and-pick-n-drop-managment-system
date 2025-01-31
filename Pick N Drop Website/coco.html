@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - School Bus Pick & Drop Schedule</title>
+    <link rel="stylesheet" href="coc.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Admin Dashboard</h1>
+            <nav>
+                <a href="#scheduleSection">Schedules</a>
+                <a href="#attendanceSection">Attendance</a>
+                <a href="#paymentSection">Payments</a>
+            </nav>
+        </header>
+
+        <section id="scheduleSection">
+            <h2>Manage Pick & Drop Schedules</h2>
+            <form id="busForm">
+                <input type="hidden" id="scheduleId">
+
+                <div class="form-group">
+                    <label for="studentName">Student Name:</label>
+                    <input type="text" id="studentName" name="studentName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentClass">Class:</label>
+                    <input type="text" id="studentClass" name="studentClass" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="busNumber">Bus Number:</label>
+                    <input type="text" id="busNumber" name="busNumber" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pickTime">Pick-Up Time:</label>
+                    <input type="time" id="pickTime" name="pickTime" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dropTime">Drop-Off Time:</label>
+                    <input type="time" id="dropTime" name="dropTime" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="paymentAmount">Payment Amount (MWK):</label>
+                    <input type="number" id="paymentAmount" name="paymentAmount" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="balance">Balance (MWK):</label>
+                    <input type="number" id="balance" name="balance" readonly>
+                </div>
+
+                <button type="submit" class="primary-btn">Save Schedule</button>
+            </form>
+
+            <div id="scheduleList">
+                <h3>All Schedules</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Class</th>
+                            <th>Bus Number</th>
+                            <th>Pick-Up Time</th>
+                            <th>Drop-Off Time</th>
+                            <th>Payment Amount (MWK)</th>
+                            <th>Balance (MWK)</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="scheduleItems"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="attendanceSection">
+            <h2>Attendance Tracking</h2>
+            <form id="attendanceForm">
+                <div class="form-group">
+                    <label for="attendanceDate">Date:</label>
+                    <input type="date" id="attendanceDate" name="attendanceDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentNameAttendance">Student Name:</label>
+                    <input type="text" id="studentNameAttendance" name="studentNameAttendance" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="attendanceStatus">Status:</label>
+                    <select id="attendanceStatus" name="attendanceStatus" required>
+                        <option value="Present">Present</option>
+                        <option value="Absent">Absent</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="primary-btn">Record Attendance</button>
+            </form>
+
+            <div id="attendanceList">
+                <h3>Attendance Records</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Student Name</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="attendanceItems"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="paymentSection">
+            <h2>Payments & Balances</h2>
+            <div id="paymentSummary">
+                <h3>Overall Payment Summary</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Total Payment (MWK)</th>
+                            <th>Balance (MWK)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="paymentItems"></tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
